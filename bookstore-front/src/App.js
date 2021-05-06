@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import Book from "./Book"
+import './Book.css'
 
 class App extends Component {
 
@@ -19,7 +21,14 @@ class App extends Component {
     render() {
         return (
             <div>
-                HELLO
+                <tr>
+                    <th className={"tablink"}>ID</th>
+                    <th>TITLE</th>
+                    <th>AUTHOR</th>
+                    <th>TYPE</th>
+                </tr>
+
+                {this.state.data.map(book => <Book info={book}/>)}
             </div>
         );
     }

@@ -35,11 +35,4 @@ public class BookService {
         bookRepository.deleteById(id);
     }
 
-    @EventListener(ApplicationReadyEvent.class)
-    public void fillDB() {
-        save(new Book(1L, "Harry Potter", "J.K. Rowling", "Fantasy"));
-        save(new Book(2L, "Władca Pierścieni", "Tolkien", "Fantasy"));
-        save(new Book(3L, "Sherlock Holmes", "Arthur Conan Doyle", "Criminal"));
-
-    }
 }
