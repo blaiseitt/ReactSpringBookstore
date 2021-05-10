@@ -7,7 +7,7 @@ td, th {
     width: 300px;
     background-color: lightslategray;
 }
-.tablink{
+.tabID{
     border: 1px solid #dddddd;
     text-align: center;
     padding: 8px;
@@ -15,4 +15,34 @@ td, th {
     overflow: hidden;
     width: 30px;
     background-color: cadetblue;
+}
+
+.tabTitle{
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    height: 30px;
+    overflow: hidden;
+    width: 300px;
+    background-color: cornflowerblue;
+}
+
+.tabAuthor{
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    height: 30px;
+    overflow: hidden;
+    width: 300px;
+    background-color: darkseagreen;
+}
+
+.tabType{
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    height: 30px;
+    overflow: hidden;
+    width: 300px;
+    background-color: darkolivegreen;
 }

@@ -1,23 +1,18 @@
 import React, {Component} from 'react';
 import './Book.css'
 
-class Book extends Component {
 
-    state =
-        {
-            data: []
-        }
+class Book extends Component {
 
     render() {
         return (
             <div>
                 <tr>
-                    <td className={"tablink"}>{this.props.info.id}</td>
-                    <td>{this.props.info.title}</td>
-                    <td>{this.props.info.author}</td>
-                    <td>{this.props.info.type}</td>
+                    <td className={"tabID"}>{this.props.info.id}</td>
+                    <td className={"tabTitle"}>{this.props.info.title}</td>
+                    <td className={"tabAuthor"}>{this.props.info.author}</td>
+                    <td className={"tabType"}>{this.props.info.type}</td>
                 </tr>
-                    {/*{this.props.info.id} {this.props.info.title} {this.props.info.author} {this.props.info.type}*/}
             </div>
         );
     }
