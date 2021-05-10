@@ -35,4 +35,7 @@ public class BookService {
         bookRepository.deleteById(id);
     }
 
+    public Iterable<Book> findByType(String type){
+        return bookRepository.findByType(type);
+    }
 }

@@ -29,6 +29,11 @@ public class BookApi {
         return bookService.findById(index);
     }
 
+    @GetMapping("/type")
+    public Iterable<Book> getByType(@RequestParam String type){
+        return bookService.findByType(type);
+    }
+
     @PostMapping
     public Book addBook(@RequestBody Book book) {
         return bookService.save(book);
@@ -43,7 +48,5 @@ public class BookApi {
     public void deleteBook(@RequestParam Long index) {
         bookService.delete(index);
     }
-
-
 
 }
