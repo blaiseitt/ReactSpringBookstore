@@ -15,7 +15,7 @@ public class BookApi {
     private BookService bookService;
 
     @Autowired
-    public BookApi(BookService bookService){
+    public BookApi(BookService bookService) {
         this.bookService = bookService;
     }
 
@@ -25,12 +25,12 @@ public class BookApi {
     }
 
     @GetMapping
-    public Optional<Book> getById(@RequestParam Long index){
+    public Optional<Book> getById(@RequestParam Long index) {
         return bookService.findById(index);
     }
 
     @GetMapping("/type")
-    public Iterable<Book> getByType(@RequestParam String type){
+    public Iterable<Book> getByType(@RequestParam String type) {
         return bookService.findByType(type);
     }
 
@@ -49,4 +49,13 @@ public class BookApi {
         bookService.delete(index);
     }
 
+    @GetMapping(value = "/all/{pageNumber}")
+    public Iterable<Book> getCertainPage(@PathVariable Integer pageNumber) {
+        return bookService.getSpecificPage(pageNumber).getContent();
+    }
+
+    @GetMapping(value = "/all/numberOfPages")
+    public Integer getCertainPage() {
+        return bookService.getSpecificPage(0).getTotalPages();
+    }
 }

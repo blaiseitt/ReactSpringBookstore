@@ -3,8 +3,10 @@ import Book from "./Book"
 import './Book.css'
 import FindComp from "./FindComp"
 import Form from "./Form"
-import {Button} from 'react-bootstrap';
+
+import {Button, Navbar, Nav} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
+
 
 class App extends Component {
 
@@ -52,7 +54,22 @@ class App extends Component {
 
     render() {
         return (
+
+
+
             <div>
+                <Navbar bg="light" expand="lg">
+                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="mr-auto">
+                            <Nav.Link href="#home">Home</Nav.Link>
+                            <Nav.Link href="#link">Link</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+
+
                 <tr>
                     <th className={"tabID"}>ID</th>
                     <th className={"tabTitle"}>TITLE</th>
