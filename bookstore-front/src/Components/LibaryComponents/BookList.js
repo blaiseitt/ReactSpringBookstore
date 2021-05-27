@@ -1,5 +1,5 @@
 import React, {Component, useState} from 'react';
-import '../Stylesheets/Book.css'
+import '../../Stylesheets/Book.css'
 import {Button, Navbar, Nav, ListGroup, Tab, Table} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
 
@@ -29,15 +29,6 @@ function BookList({books, loading}) {
             </tr>)}
             </tbody>
         </Table>
-
-        /*<div>
-            <tr>
-                <td className={"tabID"}>{book.id}</td>
-                <td className={"tabTitle"}>{book.title}</td>
-                <td className={"tabAuthor"}>{book.author}</td>
-                <td className={"tabType"}>{book.type}</td>
-            </tr>
-        </div>*/
     );
 }
 

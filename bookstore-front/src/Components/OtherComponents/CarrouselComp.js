@@ -1,15 +1,14 @@
 import React, {useState} from 'react';
-import '../Stylesheets/Book.css'
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
 
 
-function BooksAndPagination(){
+function CarrouselComp(){
 
     return (
         <div>
-            <h4>Books and pagination</h4>
+            <h4>Karuzellllllllla</h4>
         </div>
     );
 }
 
-export default BooksAndPagination;
+export default CarrouselComp;

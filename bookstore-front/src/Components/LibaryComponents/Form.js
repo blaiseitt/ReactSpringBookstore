@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import '../Stylesheets/Form.css';
+import '../../Stylesheets/Form.css';
 import Axios from 'axios';
 import {Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
