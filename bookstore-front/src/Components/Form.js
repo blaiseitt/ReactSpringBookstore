@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import './Form.css';
+import '../Stylesheets/Form.css';
 import Axios from 'axios';
 import {Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
@@ -77,6 +77,7 @@ class Form extends Component {
                                         <option value="Criminal">Criminal</option>
                                         <option value="Mithology">Mithology</option>
                                         <option value="Novel">Novel</option>
+                                        <option value="Popular science">Popular science</option>
                                     </select>
                                 </td>
                             </tr>
